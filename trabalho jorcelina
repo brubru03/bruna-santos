@@ -1,0 +1,23 @@
+from PIL import Image
+
+# Abra uma imagem
+img = Image.open("caminho/para/sua/imagem.jpg")
+
+# Mostre a imagem
+img.show()import matplotlib.pyplot as plt
+
+# Dados de exemplo
+categorias = ['Categoria A', 'Categoria B', 'Categoria C']
+valores = [10, 20, 30]
+
+plt.bar(categorias, valores)
+plt.xlabel('Categorias')
+plt.ylabel('Valores')
+plt.title('Gráfico de Barras de Exemplo')
+plt.show()import geopandas as gpd
+
+# Carregar um arquivo shapefile
+gdf = gpd.read_file("caminho/para/seu/arquivo.shp")
+
+# Mostrar o conteúdo do arquivo
+print(gdf.head())
